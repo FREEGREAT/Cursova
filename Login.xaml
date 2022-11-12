@@ -3,13 +3,15 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="720" d:DesignWidth="1270"
       Title="Login">
-
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,321,0,0" VerticalAlignment="Top" Height="50" Width="188" Click="Button_Click"/>
+        <Button Content="Ввійти"  Margin="547,503,543,0" VerticalAlignment="Top" Height="54" Width="180"  FontSize="36" Click="Button_Click_1"/>
+        <TextBox  x:Name="Username_Box" Foreground="Gray" Margin="0,307,0,0" TextWrapping="Wrap" Width="382" Tag="Логін" Text="Логін" FontSize="48" Height="67" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBox x:Name="Password_Box" Foreground="Gray" Margin="0,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Пароль" Width="382" Height="66" Tag="Пароль" FontSize="48" HorizontalAlignment="Center"/>
+        <Label Content="Авторизація користувача" VerticalAlignment="Top"  Foreground="Black" HorizontalContentAlignment="Center" FontSize="32" Height="70" VerticalContentAlignment="Center" FontWeight="Bold" Margin="308,236,299,0"/>
+        
 
     </Grid>
 </Page>

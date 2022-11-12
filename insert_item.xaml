@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.insert_item"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="insert_item" Height="410" Width="892" ResizeMode="NoResize">
+   
+    <Grid Background="#FFEFEFEF">
+        <TextBlock HorizontalAlignment="Left" Margin="68,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF101010" FontSize="18" FontWeight="Bold" Width="144"><Run Language="uk-ua" Text="Назва товару"/><Run Text=":"/></TextBlock>
+        <ComboBox x:Name ="LicenseBox"  HorizontalAlignment="Left" Margin="452,206,0,0" VerticalAlignment="Top" Width="149" Height="24" IsEditable="True">
+            <TextBlock><Run Text="Річна"/></TextBlock>
+            <TextBlock><Run Text="Вічна"/></TextBlock>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="321,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="18" FontWeight="Bold" Width="120"><Run Language="uk-ua" Text="Тип ліцензії"/></TextBlock>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Margin="198,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="28" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="563,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="18" FontWeight="Bold" Width="130"><Run Language="uk-ua" Text="Ціна товару"/></TextBlock>
+        <TextBox x:Name="PriceBox" HorizontalAlignment="Left" Margin="674,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="28" FontSize="16"/>
+        <Button Content="Добавити товар" HorizontalAlignment="Left" Margin="402,304,0,0" VerticalAlignment="Top" Click="Button_Click" Height="36" Width="95"/>
+        <Label Content="Добавити запис" HorizontalAlignment="Left" Margin="319,1,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold"/>
+    </Grid>
+</Window>

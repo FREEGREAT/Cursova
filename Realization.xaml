@@ -1,4 +1,4 @@
-﻿<Page x:Class="WpfApp1.Table1"
+﻿<Page x:Class="WpfApp1.Realization"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -19,14 +19,14 @@
 
         </Grid>
         <DataGrid  x:Name="Data_Grid_clients" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="1,90,-1,65"  FontFamily="Bahnschrift Condensed" FontSize="18" Cursor="Hand"/>
-        <Label x:Name="Clients" Content="Асортимент ПЗ" Margin="13,20,0,0" Foreground="Black" FontSize="36" FontWeight="Normal" Width="262" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top"/>
+        <Label x:Name="Clients" Content="Реалізація" Margin="13,20,0,0" Foreground="Black" FontSize="36" FontWeight="Normal" Width="262" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top"/>
         <Button  Content="Пошук" x:Name="searchButton" Margin="0,55,1,0" VerticalAlignment="Top" Click="search_Click" Width="45" Height="33" HorizontalAlignment="Right"/>
         <Button  Content="Назад" VerticalAlignment="Top" Height="30" Click="Button_Click_1" HorizontalAlignment="Right" Width="36"/>
 
-        <Button Content="Додати запис"  Margin="0,0,709,1" Click="Button_Click" Background="#FFF8FBF8" FontWeight="Bold" HorizontalAlignment="Right" Width="106" Height="59" VerticalAlignment="Bottom"/>
+        <Button Content="Додати запис"  Margin="0,0,709,1" Click="Button_Click" Background="#FFF8FBF8" FontWeight="Bold" Height="59" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="106"/>
         <Button  Content="Видалити запис"  Margin="0,0,589,0" Click="DELETE_Click" Background="#FFF8FBF8" FontWeight="Bold" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="104"/>
         <Button x:Name="Update"  Content="Оновити запис" Margin="0,0,469,0" FontWeight="Bold" Background="#FFF8FBF8" Click="Update_Click_1" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="106"/>
         <Button x:Name="Refresh" Content="Оновити таблицю" Margin="0,0,341,0" Click="Refresh_Click" Background="#FFF8FBF8" FontWeight="Bold" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="114"/>
-        <TextBox x:Name="searchBOX" Margin="1075,55,46,0" TextWrapping="Wrap" FontSize="20" Background="White" Text="Назва товару" Foreground="Gray"  Height="33" VerticalAlignment="Top"/>
+        <TextBox x:Name="searchBOX" Margin="1075,55,46,0" TextWrapping="Wrap" FontSize="20" Background="White" Text="ID" Foreground="Gray"  Height="33" VerticalAlignment="Top"/>
     </Grid>
 </Page>

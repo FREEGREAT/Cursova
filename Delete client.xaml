@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp1.Delete_client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Delete_client" Height="450" Width="800">
+    <Grid>
+        <Label Content="Видалити запис" HorizontalAlignment="Center" Margin="1,-1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="Phonebox" HorizontalAlignment="Left" Margin="360,179,0,0" TextWrapping="Wrap" Text="+380" Foreground="Black" VerticalAlignment="Top" FontSize="30" Width="334" Height="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" RenderTransformOrigin="0.419,0.251"><Run Language="uk-ua" Text="Номер телефону"/><Run Text=":"/></TextBlock>
+        <Button Content="Видалити" HorizontalAlignment="Left" Margin="345,334,0,0" VerticalAlignment="Top" Height="58" Width="115" Click="Button_Click"/>
+    </Grid>
+</Window>
